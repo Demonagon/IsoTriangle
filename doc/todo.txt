@@ -4,8 +4,10 @@ PROJECT CODE NAME : ISO-TRIANGLE
 
 TODO
 
-=> Mettre au point le moteur graphique SFML (✗)
-	> Fonctions de projection isométrique (✗)
+=> Mettre au point le moteur graphique SFML (⌛)
+	> Fonctions de projection isométrique (⌛)
+		- Trouver les équations de matrice (✔)
+		- Trouver les fonctions OpenGL correspondantes (✔)
 		- Bon angle (✗)
 		- Cadrage (✗)
 		- Rotation (✗)
@@ -58,10 +60,12 @@ TODO
 		- Premier écran de jeu : présentation (✗)
 		- Menu principal (✗)
 
-=> Améliorer la gestion du projet (✗)
+=> Améliorer la gestion du projet (⌛)
 	> TODO List (⌛)
 		- Rédiger les tâches (⌛)
 		- Ajouter des couleurs (✗)
+	> Amélioration du système de libraires
+		- Trier les .h et .a dans des dossier header et lib (✗)
 	> Implémentation Multi-Plateformes
 		- Linux (✗)
 		- Windows (✗)
