@@ -26,3 +26,28 @@ f = far
 n = near
 
 -> glOrtho
+
+
+===> Nouvelle version :
+étape 1 : obtenir une perspective orthométrique sur la caméra :
+
+glMatrixMode(GL_PROJECTION);
+glLoadIdentity();
+glOrtho(-x, x, -y, y, near, far);
+
+( exemple : )
+glOrtho(-100, 100, -100, 100, 1.f, 1000.0f);
+
+étape 2 : déplacer et tourner la position de la scène pour obtenir une vision
+pseudo-isométrique :
+
+glMatrixMode(GL_MODELVIEW);
+glLoadIdentity();
+glTranslatef(0.f, 0.f, -300.f);
+glScalef(scale, scale, 1.f)
+glRotatef(angle de vue ↕, 1.f, 0.f, 0.f);
+glRotatef(angle de vue ↔, 0.f, 1.f, 0.f);
+
+angles en 0, 90, 180 ...
+le -300.f peut être ajusté pour être sûr de garder toute la scène dans la vue
+de la caméra.
